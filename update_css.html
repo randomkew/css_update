@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS varibables</title>
+    <!--
+    :root은 선택자는 문서의 최상유 요소를 가르킴 그럼html문서에 최상위요소는 html이다
+    근데 :root는 가상 선택자 이기 떄문에 html설렉터보다 우선순위가 높다.
+    :root와 html 스타일이 동시 선언되면 :root에 대한 스타일이 우선됩니다. 왜사용하냐 css변수 사용하기 위해 --로 시작됌
+    --base이렇게 나온건 사용자 저의 속서으 var()을 통해 접근할 수있다. 
+    -->
+    <link rel="stylesheet" href="css_update.css">
+</head>
+<body>
+    <h2 class="texts">Update Css variales with <span class='hl'>js</span></h2>
+    <div class="controls">
+        <label for="spacing">Spaing:</label>
+        <input type="range" name="spacing" min="10" max="200" value="20" data-sizing="px">
+        <!--input value초기값 name 서버로전달하는 이름-->
+
+        <label for="blur">Blur:</label>
+        <input type="range" name="blur" min="0" max="25" value="0" data-sizing="px">
+
+        <label for="sizee">size:</label>
+        <input type="range" name="sizee" min="10" max="70" value="40" data-sizing="px">
+
+        <label for="base">Base color</label>
+        <input type="color" name="base" value="#ffc600">
+    </div>
+    <img src="wood.png">
+    <script src="css_update.js"></script>
+    
+</body>
+</html>
